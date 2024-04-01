@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Tenor+Sans&family=Whisper&display=swap") * {
   font-family: "Merriweather", serif;
 }
+.para {
+  color: gray;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -44,7 +47,7 @@ nav li {
 .banner img {
   width: 100%;
 }
-/*  */
+/* mobile */
 @media screen and (max-width: 576px) {
   header {
     padding: 20px;
@@ -96,4 +99,36 @@ nav li {
 }
 .our {
   color: black;
+}
+/*  */
+/* mobile */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav,
+  .teams-container {
+    flex-direction: column;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+  .teams-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+/* tablet */
+@media screen and (min-width: 576px) and(max-width:992px) {
+  header {
+    padding: 50px;
+  }
+  nav,
+  .teams-img-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .primary-btn {
+    padding: 5px;
+  }
 }
