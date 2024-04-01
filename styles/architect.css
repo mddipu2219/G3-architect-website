@@ -65,3 +65,35 @@ nav li {
     flex-direction: column;
   }
 }
+/* teams */
+.teams-container {
+  display: flex;
+
+  text-align: center;
+  margin-top: 30px;
+}
+
+.teams-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.teams-content {
+  padding-left: 70px;
+  padding-right: 80px;
+  padding-top: 150px;
+  align-items: center;
+}
+.teams-content-tittle {
+  font-size: 50px;
+  font-weight: 700;
+}
+.feature {
+  color: rgb(228, 133, 8);
+}
+.quick {
+  color: gray;
+}
+.our {
+  color: black;
+}
