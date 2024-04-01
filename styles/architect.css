@@ -39,4 +39,29 @@ nav li {
   border-radius: 5px;
   border: none;
   background-color: yellowgreen;
+  color: white;
+}
+.banner img {
+  width: 100%;
+}
+/*  */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+}
+/* tablet */
+@media screen and (min-width: 576px) and(max-width:992px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
