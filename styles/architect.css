@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Tenor+Sans&family=Whisper&display=swap") * {
   font-family: "Merriweather", serif;
 }
-.para {
+.para,
+.facts-tittle {
   color: gray;
 }
 nav {
@@ -20,7 +21,7 @@ nav li {
   margin-right: 20px;
   font-weight: 500;
 }
-.nav-tittle {
+.tittle {
   font-size: 2.8rem;
   font-weight: 700;
 }
@@ -47,27 +48,7 @@ nav li {
 .banner img {
   width: 100%;
 }
-/* mobile */
-@media screen and (max-width: 576px) {
-  header {
-    padding: 20px;
-  }
-  nav {
-    flex-direction: column;
-  }
-  nav > ul {
-    flex-direction: column;
-  }
-}
-/* tablet */
-@media screen and (min-width: 576px) and(max-width:992px) {
-  header {
-    padding: 50px;
-  }
-  nav {
-    flex-direction: column;
-  }
-}
+
 /* teams */
 .teams-container {
   display: flex;
@@ -91,7 +72,7 @@ nav li {
   font-size: 50px;
   font-weight: 700;
 }
-.feature {
+.text-feature {
   color: rgb(228, 133, 8);
 }
 .quick {
@@ -100,7 +81,26 @@ nav li {
 .our {
   color: black;
 }
-/*  */
+/* facts */
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid rgb(228, 133, 8);
+  text-align: center;
+  padding: 40px 30px;
+}
+.facts-card-container .card-stats {
+  font-size: 2, 8rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.facts-card-container .facts-tittle {
+  font-size: 1.25rem;
+}
+
 /* mobile */
 @media screen and (max-width: 576px) {
   header {
